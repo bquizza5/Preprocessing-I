@@ -136,9 +136,17 @@ table {
 }
 body {
   height: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   border: 1px solid black;
   margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+@media (max-width: 505px) {
+  body {
+    margin: auto;
+    border: none;
+  }
 }
 body nav {
   display: flex;
@@ -153,7 +161,7 @@ body nav {
 @media (max-width: 505px) {
   body nav {
     flex-direction: column;
-    margin: auto;
+    max-width: 100%;
   }
 }
 body nav a {
@@ -241,6 +249,10 @@ body .container1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+body .container1 h2 {
+  font-size: 150%;
+  margin-bottom: 10px;
 }
 body hr {
   width: 90%;
