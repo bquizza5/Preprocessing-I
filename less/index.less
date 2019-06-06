@@ -53,7 +53,123 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+.center{
+	justify-content: center;
+	align-items: center;
 }
+
+body {
+  height: 100%;
+  max-width: 900px;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  @media (max-width: 505px){
+	  margin: auto;
+	  border: none;
+  }
+  nav {
+	display: flex;
+	justify-content: flex-end;
+	max-width: 95%;
+	@media(max-width:800px){
+		justify-content: space-around;
+	}
+	@media(max-width:505px){
+		flex-direction: column;
+		max-width: 100%;
+		}
+  	a {
+	  text-decoration: none;
+	  margin: 20px 0px 20px 20px;
+	  color: black;
+	  @media(max-width:800px){
+		margin: 0px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		}
+	@media(max-width:505px){
+		text-align: center;
+		width: 100%;
+		border: 1px solid black;
+		margin: 0px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		
+
+			}
+	}
+}
+
+	.desktop-size {
+		width: 100%;
+		height: auto;
+		@media (max-width:505px){
+			display: none;
+		}
+		
+	}
+	.moblie-size {
+		display: none;
+		@media (max-width:505px){
+			display: flex;
+			max-width: 100%;
+		}
+
+	}
+
+	.container {
+		max-width: 90%;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		@media (max-width:505px) {
+			flex-direction: column;
+		}
+		.child {
+			max-width: 45%;
+			margin: auto;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			@media (max-width: 505px){
+				max-width: 95%;
+			}
+			h2 {
+				font-size: 150%;
+				margin-bottom: 10px;
+			}
+		}
+		h1 {
+			font-size: 300%;
+			text-align: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			@media(max-width: 505px){
+				font-size: 200%;
+			}
+		}
+
+	}
+	.container1{
+		display: flex;
+		flex-direction: column;
+		.center();
+		h2 {
+			font-size: 150%;
+			margin-bottom: 10px;
+		}
+
+
+	}
+	hr{
+		width: 90%;
+	}
+}
+
+
+
 
